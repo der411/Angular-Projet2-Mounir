@@ -7,11 +7,11 @@ import { Bien } from '../models/bien';
   providedIn: 'root'
 })
 export class BienService {
-  private apiUrl = 'http://localhost:8080/biens/biens';
+  private apiUrl = 'http://localhost:8080';
 
   constructor(private http: HttpClient) { }
 
   getBiens(): Observable<Bien[]> {
-    return this.http.get<Bien[]>(this.apiUrl);
+    return this.http.get<Bien[]>(this.apiUrl + "/biens");
   }
 }

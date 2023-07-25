@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Bien } from '../../models/bien';
 import { BienService } from '../../services/bien.service';
 
@@ -8,7 +8,7 @@ import { BienService } from '../../services/bien.service';
   styleUrls: ['./liste-biens.component.css']
 })
 export class ListeBiensComponent implements OnInit {
-  biens: Bien[] = [];
+ @Input()  biens: Bien[] = [];
 
   constructor(private bienService: BienService) { }
 

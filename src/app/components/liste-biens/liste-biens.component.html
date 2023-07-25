@@ -4,9 +4,9 @@
         <div class="card">
           <img class="card-img-top" [src]="bien.image" alt="Photo du bien">
           <div class="card-body">
-            <h5 class="card-title">{{ bien.nom }}</h5>
-            <p class="card-text">{{ bien.description }}</p>
-            <p class="card-text">Loyer : {{ bien.loyer }} €</p>
+            <h5 class="card-title">{{ bien?.nom }}</h5>
+            <p class="card-text">{{ bien?.description }}</p>
+            <p class="card-text">Loyer : {{ bien?.loyer }} €/J</p>
           </div>
         </div>
       </div>
